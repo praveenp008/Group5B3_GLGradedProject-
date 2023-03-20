@@ -18,9 +18,10 @@ public class DepartmentImpl implements DepartmentFunctions {
 	@Override
 	public void displayHRDepartment(HRDepartment hrDepartment) {
 		System.out.println(hrDepartment.getDepartmentName());
+		System.out.println(hrDepartment.getDoActivity());
 		System.out.println(hrDepartment.getGetTodaysWork());
 		System.out.println(hrDepartment.getGetWorkDeadline());
-		System.out.println(hrDepartment.getDoActivity());
+		System.out.println(SuperDepartment.isTodayAHoliday);
 
 	}
 
@@ -29,6 +30,7 @@ public class DepartmentImpl implements DepartmentFunctions {
 		System.out.println(techDepartment.getDepartmentName());
 		System.out.println(techDepartment.getGetTodaysWork());
 		System.out.println(techDepartment.getGetWorkDeadline());
+		System.out.println(techDepartment.getGetTechStackInformation());
 		System.out.println(SuperDepartment.isTodayAHoliday);
 
 	}
