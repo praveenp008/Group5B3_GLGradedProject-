@@ -15,16 +15,18 @@ public class Main {
 		DepartmentImpl departmentImpl = new DepartmentImpl();
 		HRDepartment hrDepartment = new HRDepartment();
 		TechDepartment techDepartment = new TechDepartment();
-		
+
 		superDepartment.setDepartmentName("Super Department");
 		superDepartment.setGetTodaysWork("Complete your documents Submission");
 		superDepartment.setGetWorkDeadline("Nil");
-	//	departmentImpl.displaySuperDepartment(superDepartment);
-	//	System.out.println();
+		superDepartment.setIsTodayAHoliday("Today is not a holiday");
+		// departmentImpl.displaySuperDepartment(superDepartment);
+		// System.out.println();
 
 		adminDepartment.setDepartmentName("Welcome to Admin Department");
 		adminDepartment.setGetTodaysWork("Complete your documents Submission");
 		adminDepartment.setGetWorkDeadline("Complete by EOD");
+		adminDepartment.setIsTodayAHoliday("Today is not a holiday");
 		departmentImpl.displayAdminDepartment(adminDepartment);
 		System.out.println();
 
@@ -32,6 +34,7 @@ public class Main {
 		hrDepartment.setDoActivity("team Lunch");
 		hrDepartment.setGetTodaysWork("Fill today\'s timesheet and mark your attendance");
 		hrDepartment.setGetWorkDeadline("Complete by EOD");
+		hrDepartment.setIsTodayAHoliday("Today is not a holiday");
 		departmentImpl.displayHRDepartment(hrDepartment);
 		System.out.println();
 
@@ -39,6 +42,7 @@ public class Main {
 		techDepartment.setGetTodaysWork("Complete coding of Module 1");
 		techDepartment.setGetWorkDeadline("Complete by EOD ");
 		techDepartment.setGetTechStackInformation("Core Java");
+		techDepartment.setIsTodayAHoliday("Today is not a holiday");
 		departmentImpl.displayTechDepartment(techDepartment);
 
 	}

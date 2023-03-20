@@ -5,7 +5,7 @@ public class SuperDepartment {
 	protected String departmentName;
 	protected String getTodaysWork;
 	protected String getWorkDeadline;
-	public static final String isTodayAHoliday = "Today is not a Holiday";
+	protected String isTodayAHoliday;
 
 	public String getDepartmentName() {
 		return departmentName;
@@ -31,4 +31,11 @@ public class SuperDepartment {
 		this.getWorkDeadline = getWorkDeadline;
 	}
 
+	public String getIsTodayAHoliday() {
+		return isTodayAHoliday;
+	}
+
+	public void setIsTodayAHoliday(String isTodayAHoliday) {
+		this.isTodayAHoliday = isTodayAHoliday;
+	}
 }

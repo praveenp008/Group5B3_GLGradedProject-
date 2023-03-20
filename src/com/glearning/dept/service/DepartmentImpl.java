@@ -11,8 +11,7 @@ public class DepartmentImpl implements DepartmentFunctions {
 		System.out.println(adminDepartment.getDepartmentName());
 		System.out.println(adminDepartment.getGetTodaysWork());
 		System.out.println(adminDepartment.getGetWorkDeadline());
-		System.out.println(SuperDepartment.isTodayAHoliday);
-
+		System.out.println(adminDepartment.getIsTodayAHoliday());
 	}
 
 	@Override
@@ -21,8 +20,7 @@ public class DepartmentImpl implements DepartmentFunctions {
 		System.out.println(hrDepartment.getDoActivity());
 		System.out.println(hrDepartment.getGetTodaysWork());
 		System.out.println(hrDepartment.getGetWorkDeadline());
-		System.out.println(SuperDepartment.isTodayAHoliday);
-
+		System.out.println(hrDepartment.getIsTodayAHoliday());
 	}
 
 	@Override
@@ -31,7 +29,7 @@ public class DepartmentImpl implements DepartmentFunctions {
 		System.out.println(techDepartment.getGetTodaysWork());
 		System.out.println(techDepartment.getGetWorkDeadline());
 		System.out.println(techDepartment.getGetTechStackInformation());
-		System.out.println(SuperDepartment.isTodayAHoliday);
+		System.out.println(techDepartment.getIsTodayAHoliday());
 
 	}
 
@@ -39,7 +37,7 @@ public class DepartmentImpl implements DepartmentFunctions {
 		System.out.println(superDepartment.getDepartmentName());
 		System.out.println(superDepartment.getGetTodaysWork());
 		System.out.println(superDepartment.getGetWorkDeadline());
-		System.out.println(SuperDepartment.isTodayAHoliday);
-		
+		System.out.println(superDepartment.getIsTodayAHoliday());
+
 	}
 }
