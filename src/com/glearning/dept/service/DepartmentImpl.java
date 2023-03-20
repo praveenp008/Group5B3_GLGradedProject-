@@ -34,4 +34,12 @@ public class DepartmentImpl implements DepartmentFunctions {
 		System.out.println(SuperDepartment.isTodayAHoliday);
 
 	}
+
+	public void displaySuperDepartment(SuperDepartment superDepartment) {
+		System.out.println(superDepartment.getDepartmentName());
+		System.out.println(superDepartment.getGetTodaysWork());
+		System.out.println(superDepartment.getGetWorkDeadline());
+		System.out.println(SuperDepartment.isTodayAHoliday);
+		
+	}
 }
